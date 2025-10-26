@@ -1,1 +1,84 @@
+# 🏥 Gestión de Pacientes con Árbol Binario de Búsqueda
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+## 📌 Descripción
+
+Este proyecto implementa un **Árbol Binario de Búsqueda (ABB)** para gestionar pacientes en una clínica según su **ID médico**.  
+Permite realizar **inserciones, búsquedas y eliminaciones** de manera eficiente, manteniendo los datos organizados para un acceso rápido.
+
+Es ideal para **prácticas de estructuras de datos** y **algoritmos de búsqueda**, y para entender cómo un árbol binario facilita la organización de información jerárquica.
+
+---
+
+## 🛠 Tecnologías
+
+- Python 3.x  
+- Librerías estándar: `datetime` (para medir tiempos de ejecución)  
+- Conceptos aplicados:  
+  - Árbol Binario de Búsqueda (BST)  
+  - Recursión e iteración  
+  - Manejo de nodos y referencias  
+  - Ordenamiento inorden  
+
+---
+
+## 📂 Archivos del Proyecto
+
+| Archivo | Descripción |
+|---------|------------|
+| `arbolbinariodebusqueda.py` | Implementación principal del ABB con inserción, búsqueda, eliminación y recorrido inorden. |
+| `arbolgeneral.py` | Versión general del árbol binario de búsqueda con operaciones similares. |
+| `clasepaciente.py` | Clase `Nodo` para representar pacientes y sus operaciones en el árbol. |
+| `cola-heapbinaria.py` | Árbol binario aplicado a estructuras tipo cola/heap (para práctica adicional). |
+
+---
+
+## ⚙️ Funcionalidades
+
+1. **Crear árbol y nodos:**  
+   Se crea un árbol con un nodo raíz y nodos hijos.
+
+2. **Insertar paciente:**  
+   Se agregan pacientes con un ID único en el lugar correcto del árbol.
+
+3. **Buscar paciente:**  
+   Permite buscar un paciente por su ID de forma eficiente.
+
+4. **Eliminar paciente:**  
+   Maneja tres casos:  
+   - Nodo sin hijos  
+   - Nodo con un hijo  
+   - Nodo con dos hijos (reemplazo por el mínimo del subárbol derecho)
+
+5. **Mostrar pacientes en orden:**  
+   Recorre el árbol **inorden** para mostrar los IDs de forma ascendente.
+
+6. **Medición de tiempo de ejecución:**  
+   Se calcula el tiempo de ejecución de las operaciones del árbol.
+
+---
+
+## 📈 Ejemplo de Uso
+
+```python
+# Crear árbol con raíz
+arbol = Nodo(10)
+arbol.set_izq(Nodo(5))
+arbol.set_der(Nodo(35))
+
+# Insertar pacientes
+arbol.insertar(30)
+arbol.insertar(4)
+arbol.insertar(8)
+arbol.insertar(40)
+
+# Mostrar pacientes ordenados por ID
+arbol.mostrar_inorden()
+
+# Buscar paciente
+resultado = arbol.buscar(40)
+
+# Eliminar paciente
+arbol.eliminar(40)
 
