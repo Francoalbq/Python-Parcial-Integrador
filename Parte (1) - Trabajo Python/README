@@ -1,7 +1,5 @@
 # 🏥 Gestión de Pacientes con Árbol Binario de Búsqueda
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
 ## 📌 Descripción
 
 Este proyecto implementa un **Árbol Binario de Búsqueda (ABB)** para gestionar pacientes en una clínica según su **ID médico**.  
