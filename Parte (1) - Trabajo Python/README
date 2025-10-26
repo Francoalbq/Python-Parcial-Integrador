@@ -1,82 +1,55 @@
-# 🏥 Gestión de Pacientes con Árbol Binario de Búsqueda
+Gestión de Pacientes con Árbol Binario de Búsqueda
 
-## 📌 Descripción
+Descripción:
 
-Este proyecto implementa un **Árbol Binario de Búsqueda (ABB)** para gestionar pacientes en una clínica según su **ID médico**.  
-Permite realizar **inserciones, búsquedas y eliminaciones** de manera eficiente, manteniendo los datos organizados para un acceso rápido.
+Este proyecto implementa un Árbol Binario de Búsqueda (ABB) para la gestión de pacientes en una clínica según su ID médico.
+Permite realizar inserciones, búsquedas y eliminaciones de manera eficiente, manteniendo los datos organizados para un 
+acceso rápido y estructurado.
 
-Es ideal para **prácticas de estructuras de datos** y **algoritmos de búsqueda**, y para entender cómo un árbol binario facilita la organización de información jerárquica.
+El proyecto es ideal para:
 
----
+-Prácticas de estructuras de datos y algoritmos de búsqueda.
+-Comprender cómo un árbol binario facilita la organización de información jerárquica.
+-Analizar la eficiencia de operaciones sobre datos jerárquicos.
 
-## 🛠 Tecnologías
+Tecnologías y Conceptos Aplicados:
+Librerías estándar: datetime (para medir tiempos de ejecución)
 
-- Python 3.x  
-- Librerías estándar: `datetime` (para medir tiempos de ejecución)  
-- Conceptos aplicados:  
-  - Árbol Binario de Búsqueda (BST)  
-  - Recursión e iteración  
-  - Manejo de nodos y referencias  
-  - Ordenamiento inorden  
+Conceptos clave:
+-Árbol Binario de Búsqueda (BST)
+-Recursión e iteración
+-Manejo de nodos y referencias
+-Recorrido inorden para mostrar datos ordenados
 
----
 
-## 📂 Archivos del Proyecto
 
-| Archivo | Descripción |
-|---------|------------|
-| `arbolbinariodebusqueda.py` | Implementación principal del ABB con inserción, búsqueda, eliminación y recorrido inorden. |
-| `arbolgeneral.py` | Versión general del árbol binario de búsqueda con operaciones similares. |
-| `clasepaciente.py` | Clase `Nodo` para representar pacientes y sus operaciones en el árbol. |
-| `cola-heapbinaria.py` | Árbol binario aplicado a estructuras tipo cola/heap (para práctica adicional). |
+Funcionalidades
 
----
+-Crear árbol y nodos:
+Se inicializa un árbol con un nodo raíz y se agregan nodos hijos según la estructura binaria.
 
-## ⚙️ Funcionalidades
+-Insertar paciente:
+Se agregan pacientes con ID único en la posición correcta del árbol, garantizando la propiedad de BST.
 
-1. **Crear árbol y nodos:**  
-   Se crea un árbol con un nodo raíz y nodos hijos.
+-Buscar paciente:
+Permite localizar un paciente por su ID de forma eficiente, aprovechando la estructura binaria.
 
-2. **Insertar paciente:**  
-   Se agregan pacientes con un ID único en el lugar correcto del árbol.
+-Eliminar paciente:
+Maneja los tres casos clásicos:
 
-3. **Buscar paciente:**  
-   Permite buscar un paciente por su ID de forma eficiente.
+a.  Nodo sin hijos
+b.  Nodo con un hijo
+c.  Nodo con dos hijos (reemplazo por el mínimo del subárbol derecho)
 
-4. **Eliminar paciente:**  
-   Maneja tres casos:  
-   - Nodo sin hijos  
-   - Nodo con un hijo  
-   - Nodo con dos hijos (reemplazo por el mínimo del subárbol derecho)
+-Mostrar pacientes en orden:
+Recorre el árbol inorden, mostrando los IDs de forma ascendente.
 
-5. **Mostrar pacientes en orden:**  
-   Recorre el árbol **inorden** para mostrar los IDs de forma ascendente.
+-Medición de tiempo de ejecución:
+Permite calcular el tiempo consumido por las operaciones realizadas en el árbol.
 
-6. **Medición de tiempo de ejecución:**  
-   Se calcula el tiempo de ejecución de las operaciones del árbol.
 
----
+Conclusión
 
-## 📈 Ejemplo de Uso
-
-```python
-# Crear árbol con raíz
-arbol = Nodo(10)
-arbol.set_izq(Nodo(5))
-arbol.set_der(Nodo(35))
-
-# Insertar pacientes
-arbol.insertar(30)
-arbol.insertar(4)
-arbol.insertar(8)
-arbol.insertar(40)
-
-# Mostrar pacientes ordenados por ID
-arbol.mostrar_inorden()
-
-# Buscar paciente
-resultado = arbol.buscar(40)
-
-# Eliminar paciente
-arbol.eliminar(40)
-
+Esta implementación demuestra cómo un Árbol Binario de Búsqueda organiza información jerárquica, optimiza las búsquedas y
+permite gestionar datos de pacientes de forma rápida y estructurada.
+Es un proyecto fundamental para aprender y practicar estructuras de datos, algoritmos recursivos y técnicas de ordenamiento.
