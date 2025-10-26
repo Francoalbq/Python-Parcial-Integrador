@@ -1,1 +1,86 @@
+Proyecto de Estructuras de Datos y Algoritmos en Python
 
+Este proyecto contiene implementaciones prácticas de árboles binarios de búsqueda, grafos dirigidos y no dirigidos,
+algoritmos de recorrido (DFS y BFS), camino mínimo (Dijkstra) y ordenamiento topológico, aplicados a un contexto de gestión
+de pacientes y hospitales. El objetivo es organizar datos de manera eficiente y modelar redes de hospitales para análisis y 
+toma de decisiones.
+
+Contenido del Proyecto
+
+El proyecto está organizado en varias partes, correspondientes a diferentes unidades de estudio:
+
+1. Árboles Binarios de Búsqueda (Unidad 3)
+
+Archivos:
+
+arbolbinariodebusqueda.py
+arbolgeneral.py
+clasepaciente.py
+cola-heapbinaria.py
+
+Descripción:
+Estos scripts implementan un árbol binario de búsqueda (BST) para organizar pacientes de una clínica según su ID médico. 
+Permite:
+
+-Inserciones de nuevos pacientes.
+-Eliminaciones de pacientes existentes.
+-Búsquedas eficientes por ID.
+-Visualización de los pacientes en orden inorden.
+
+
+2. Grafos y Recorridos (Unidad 7 y 8)
+
+Archivos:
+
+Parte 2 - Trabajo python/Grafos - (Unidad 7).py
+Parte 2 - Trabajo python/Recorridos_DFS_y_BFS - (Unidad 8).py
+
+Descripción:
+Estos scripts modelan hospitales y clínicas como nodos de un grafo, con aristas que representan conexiones o 
+distancias entre ellos.
+Permiten:
+
+-Creación de grafos dirigidos y no dirigidos.
+-Agregar nodos y aristas.
+-Realizar recorridos DFS (Depth First Search) y BFS (Breadth First Search) para encontrar caminos entre hospitales.
+-Imprimir caminos encontrados.
+
+
+
+3. Ordenamiento Topológico (Unidad 9)
+
+Archivo: Parte 2 - Trabajo python/Ordenamiento_Topológico - (Unidad 9).py
+
+Descripción:
+Se utiliza ordenamiento topológico para modelar la secuencia de pasos necesarios para diagnosticar una enfermedad.
+Algunos pasos dependen de la finalización de otros, representados como grafos dirigidos acíclicos (DAG).
+
+Permite determinar el orden correcto de ejecución de pruebas médicas y análisis.
+
+Identifica dependencias entre pasos de diagnóstico.
+
+
+4. Problemas NP y Camino Mínimo (Unidad 10)
+
+Archivo: Parte 2 - Trabajo python/Problemas_NP_y_Camino_Mínimo - (Unidad 10).py
+
+Descripción:
+Implementa el algoritmo de Dijkstra para encontrar el camino mínimo entre hospitales.
+Se utiliza para:
+
+-Determinar la ruta más corta para una ambulancia.
+-Calcular distancias mínimas entre nodos de un grafo con pesos (distancias en km).
+-Mostrar el camino recorrido desde el hospital de origen hasta el destino.
+
+
+Funcionalidades Principales
+
+-Árboles binarios de búsqueda con inserción, eliminación y búsqueda eficiente.
+
+-Grafos dirigidos y no dirigidos, con manejo de aristas y vecinos.
+
+-Recorridos DFS y BFS para encontrar caminos entre nodos.
+
+-Algoritmo de Dijkstra para caminos mínimos.
+
+-Ordenamiento topológico para secuencias de tareas dependientes.
